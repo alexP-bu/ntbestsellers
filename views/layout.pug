@@ -1,0 +1,15 @@
+doctype html 
+html
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block content
+            p= "hardcover fiction:"
+            ul
+                for string in results.fic
+                    li= string
+            hr
+            p= "hardcover nonfiction:"
+            ul
+                for string in results.non
+                    li= string
