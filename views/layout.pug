@@ -5,11 +5,33 @@ html
     body
         block content
             p= "hardcover fiction:"
-            ul
-                for string in results.fic
-                    li= string
+            div
+                ul
+                    for book in results.fic
+                        li= book.isbn
+                ul
+                    for book in results.fic
+                        li= book.title
+                ul
+                    for book in results.fic
+                        li= book.author
+                ul
+                    for book in results.fic
+                        li= book.link
+            
             hr
+
             p= "hardcover nonfiction:"
-            ul
-                for string in results.non
-                    li= string
+            div
+                ul
+                    for book in results.non
+                        li= book.isbn
+                ul
+                    for book in results.non
+                        li= book.title
+                ul
+                    for book in results.non
+                        li= book.author
+                ul
+                    for book in results.non
+                        li= book.link

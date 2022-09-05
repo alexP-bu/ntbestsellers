@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const axios = require('axios');
 const API = require('./config/API');
+const Book = require('./config/Book');
 
 const app = express();
 
@@ -24,7 +25,11 @@ const getBooks = async (array, url)  => {
         .then( async res => {
           const list = await res.data.results.books;
           list.forEach( book => {
-            array.push('https://www.bookshop.org/a/15886/' + book.primary_isbn13);
+            array.push(new Book(
+              book.primary_isbn13,
+              book.title,
+              book.author,
+              'https://www.bookshop.org/a/15886/' + book.primary_isbn13));
           })
         })
         .catch(error => {
