@@ -18,13 +18,17 @@ app.get('/', async (req, res) => {
 });
 
 const getBooks = async url  => {
-    const res = await axios.get(url + "?api-key=" + API.Key);
-    return res.data.results.books.map(book => new Book(              
-      book.primary_isbn13,
-      book.title,
-      book.author,
-      'https://www.bookshop.org/a/15886/' + book.primary_isbn13
-    ));
+    try {
+      const res = await axios.get(url + "?api-key=" + API.Key);
+      return res.data.results.books.map(book => new Book(              
+        book.primary_isbn13,
+        book.title,
+        book.author,
+        'https://www.bookshop.org/a/15886/' + book.primary_isbn13
+      ));
+    } catch {
+      console.log(err => console.log(err));
+    }
 };
 
 app.listen(8080);
