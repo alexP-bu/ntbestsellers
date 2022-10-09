@@ -1,10 +1,13 @@
+// Layout file for pug renderer
+// View all book objects from result arrays 
+
 doctype html 
 html
     head
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
         block content
-            p= "hardcover fiction:"
+            p= "Hardcover Fiction:"
             div
                 ul
                     for book in results.fic
@@ -21,7 +24,7 @@ html
             
             hr
 
-            p= "hardcover nonfiction:"
+            p= "Hardcover Nonfiction:"
             div
                 ul
                     for book in results.non
@@ -34,4 +37,72 @@ html
                         li= book.author
                 ul
                     for book in results.non
+                        li= book.link
+            
+            hr
+
+            p= "Paperback Trade Fiction:"
+            div 
+                ul
+                    for book in results.pptf
+                        li= book.isbn
+                ul
+                    for book in results.pptf
+                        li= book.title
+                ul
+                    for book in results.pptf
+                        li= book.author
+                ul
+                    for book in results.pptf
+                        li= book.link
+            
+            hr 
+
+            p= "Paperback Nonfiction:"
+            div 
+                ul
+                    for book in results.pnf
+                        li= book.isbn
+                ul
+                    for book in results.pnf
+                        li= book.title
+                ul
+                    for book in results.pnf
+                        li= book.author
+                ul
+                    for book in results.pnf
+                        li= book.link
+            
+            hr 
+
+            p= "Middle Grade Hardcover:"
+            div 
+                ul
+                    for book in results.mgh
+                        li= book.isbn
+                ul
+                    for book in results.mgh
+                        li= book.title
+                ul
+                    for book in results.mgh
+                        li= book.author
+                ul
+                    for book in results.mgh
+                        li= book.link
+
+            hr
+
+            p= "Graphic Books and Manga:"
+            div 
+                ul
+                    for book in results.gbm
+                        li= book.isbn
+                ul
+                    for book in results.gbm
+                        li= book.title
+                ul
+                    for book in results.gbm
+                        li= book.author
+                ul
+                    for book in results.gbm
                         li= book.link

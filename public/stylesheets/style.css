@@ -1,3 +1,8 @@
+/*
+ * simple stylesheet; client asked for barebones
+ *
+*/
+
 div{
     display: flex;
 }
