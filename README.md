@@ -1,7 +1,8 @@
-Do you need to view the current NY Times Bestsellers clearly, quickly, and effectively?
+**Do you need to view the current NY Times Bestsellers clearly, quickly, and effectively?
 Look no further - this application displays the bestsellers in a clear, concise, and
-easy to understand manner.
-### Application By Alexander Pozin
+easy to understand manner.**
+
+---
 
 This is a web app developed for a client who needs regular listings of the NYTimes bestsellers for their bookstore.
 
@@ -32,3 +33,5 @@ docker push gcr.io/LINK_TO_PROJECT_HERE
 4. Complete setup in GCP or AWS to deploy the application. 
 
 Link to app (hosted on GCP via Cloud Run): https://getbestsellers-lvy73psbaa-uc.a.run.app
+
+### Application By Alexander Pozin
