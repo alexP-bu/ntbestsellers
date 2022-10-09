@@ -34,4 +34,4 @@ docker push gcr.io/LINK_TO_PROJECT_HERE
 
 Link to app (hosted on GCP via Cloud Run): https://getbestsellers-lvy73psbaa-uc.a.run.app
 
-### Application By Alexander Pozin
+#### Application By Alexander Pozin
