@@ -1,5 +1,7 @@
-NYT Bestsellers Application
-## By Alexander Pozin
+Do you need to view the current NY Times Bestsellers clearly, quickly, and effectively?
+Look no further - this application displays the bestsellers in a clear, concise, and
+easy to understand manner.
+### Application By Alexander Pozin
 
 This is a web app developed for a client who needs regular listings of the NYTimes bestsellers for their bookstore.
 
