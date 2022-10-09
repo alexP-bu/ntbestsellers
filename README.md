@@ -1,5 +1,5 @@
-#**NYT Bestsellers Application**
-## By Alexander Pozin
+##NYT Bestsellers Application
+### By Alexander Pozin
 
 This is a web app developed for a client who needs regular listings of the NYTimes bestsellers for their bookstore.
 
